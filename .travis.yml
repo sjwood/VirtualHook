@@ -6,3 +6,6 @@ android:
     - tools
     - build-tools-27.0.2
     - android-21
+
+script:
+   - ./VirtualApp/gradlew build
