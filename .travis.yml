@@ -7,5 +7,9 @@ android:
     - build-tools-27.0.2
     - android-21
 
+install:
+  - sdkmanager ndk-bundle
+
 script:
-   - cd ./VirtualApp/ && ./gradlew build
+   - cd ./VirtualApp
+   - ./gradlew build
