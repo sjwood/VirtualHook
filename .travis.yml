@@ -6,7 +6,9 @@ android:
     - tools
     - build-tools-27.0.2
     - android-21
-    - ndk-bundle
+
+install:
+  - echo y | sdkmanager 'ndk-bundle'
 
 script:
    - cd ./VirtualApp
