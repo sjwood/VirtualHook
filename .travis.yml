@@ -13,3 +13,9 @@ install:
 script:
    - cd ./VirtualApp
    - ./gradlew build
+
+after_failure:
+  - cat ./YAHFA/build/reports/lint-results.xml
+  - cat ./app/build/reports/lint-results.xml
+  - cat ./demoHookPlugin/build/reports/lint-results.xml
+  - cat ./lib/build/reports/lint-results.xml
